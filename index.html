@@ -1,10 +1,64 @@
 <html>
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
   <link rel="stylesheet" type="text/css" href="style.css">
-  <title></title>
-</head>
-<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+  <title>KanbanMan</title>
 
-  <style type="text/css" src="kanban.js"></style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" id="todo">
+        <table>
+          <tr>
+            <th>
+              Todo
+            </th>
+          </tr>
+          <tr>
+            <td>
+              First task
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="col-md-4" id="wip">
+        <table>
+          <tr>
+            <th>
+              In Progress
+            </th>
+          </tr>
+          <tr>
+            <td>
+              asdfasf
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="col-md-4" id="done">
+        <table>
+          <tr>
+            <th>
+              Done
+            </th>
+          </tr>
+          <tr>
+            <td>
+              here
+            </td>
+          </tr>
+        </table>
+      </div>
+
+
+  </div>
+  <script type="text/javascript" src="kanban.js"></script>
 </body>
 </html>

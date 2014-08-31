@@ -1,0 +1,47 @@
+.container{
+  border: 1px solid blue;
+  height: 90%;
+}
+
+
+tr:hover{
+  cursor: pointer
+}
+
+th{
+  background-color: #CCCCCC;
+}
+
+table{
+  margin: auto;
+}
+
+.row{
+  height: 100%;
+}
+
+.col-md-4{
+  height:100%;
+}
+
+
+#todo{
+}
+
+
+#wip{
+}
+
+#done{
+}
+
+div{
+  border: 1px solid red;
+  height: 5rem;
+}
+
+tr{
+  border: 1px solid red;
+  width: 5rem;
+  height: 3rem;
+}
