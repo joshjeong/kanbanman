@@ -1,7 +1,10 @@
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
   <title>KanbanMan</title>
 
 </head>
@@ -9,53 +12,53 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <table class="table table-hover" id = "todo">
+      <div class="col-md-4" id="todo">
+        <table>
           <tr>
             <th>
-              Todo List
+              Todo
             </th>
-          </tr>  
+          </tr>
           <tr>
             <td>
-              Deposit check
+              First task
             </td>
-          </tr>  
+          </tr>
         </table>
       </div>
 
-      <div class="col-md-4">
-        <table class="table table-hover" id = "wip">
+      <div class="col-md-4" id="wip">
+        <table>
           <tr>
             <th>
               In Progress
             </th>
-          </tr>    
+          </tr>
           <tr>
             <td>
-              Side projects
+              asdfasf
             </td>
-          </tr>  
+          </tr>
         </table>
       </div>
 
-
-      <div class="col-md-4">
-        <table class="table table-hover" id = "done">
+      <div class="col-md-4" id="done">
+        <table>
           <tr>
             <th>
               Done
             </th>
-          </tr>  
+          </tr>
           <tr>
             <td>
-              Walk the dog
+              here
             </td>
-          </tr>    
+          </tr>
         </table>
       </div>
-    </div>
+
+
   </div>
-  <style type="text/css" src="kanban.js"></style>
+  <script type="text/javascript" src="kanban.js"></script>
 </body>
 </html>

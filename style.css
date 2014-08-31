@@ -4,11 +4,26 @@
 }
 
 
-/*table{
-  display: inline;
-  border: 1px solid red;
-  text-align: center;
-}*/
+tr:hover{
+  cursor: pointer
+}
+
+th{
+  background-color: #CCCCCC;
+}
+
+table{
+  margin: auto;
+}
+
+.row{
+  height: 100%;
+}
+
+.col-md-4{
+  height:100%;
+}
+
 
 #todo{
 }
@@ -18,4 +33,15 @@
 }
 
 #done{
+}
+
+div{
+  border: 1px solid red;
+  height: 5rem;
+}
+
+tr{
+  border: 1px solid red;
+  width: 5rem;
+  height: 3rem;
 }
