@@ -1,0 +1,54 @@
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+
+.container{
+  margin-top: 1rem;
+  border: 3rem solid #CCCCCC;
+  border-radius: 20px;
+  height: 90%;
+}
+
+
+tr:hover{
+  cursor: pointer
+}
+
+th{
+  font-family: 'Permanent Marker', cursive;
+  color: red;
+  text-align: center
+}
+
+table{
+  margin: auto;
+  text-align: center;
+}
+
+.row{
+  height: 100%;
+}
+
+.col-md-4{
+  height:100%;
+}
+
+
+#todo{
+}
+
+
+#wip{
+  border-left: 1px dotted black;
+  border-right: 1px dotted black;
+}
+
+#done{
+}
+
+div{
+  height: 5rem;
+}
+
+tr{
+  width: 5rem;
+  height: 3rem;
+}
