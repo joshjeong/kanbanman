@@ -31,9 +31,13 @@ var View = function(controller){
             drag= $(ui.draggable),
             dropChildren= drop.children(),
             dragChildren= drag.children();
-        drag.appendTo(drop.children())
-  
+        if(drop.attr('id')=="done") {
+          drag.appendTo(drop.children()).delay(1000).fadeOut(5000)
+        } else {
+          drag.appendTo(drop.children())
         }
+      }
     });
   }
+
 }
