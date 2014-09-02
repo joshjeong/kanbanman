@@ -1,20 +1,37 @@
 $(document).on('ready', function(){
-  new Controller(View);
+  c = new Controller(View);
+  c.bindListeners();
 });
 
 var Controller = function(view){
+  self = this;
   this.view = new view(this);
   this.view.makeDraggable();
   this.view.makeDroppable();
 
-  // this.view.makeDroppable();
-};
+  this.bindListeners = function(){
+    this.addListener();
+  };
+
+  this.addListener = function(){
+    this.addTask();
+  };
+
+  this.addTask = function(){
+  $('#add-input').on('submit', function(e){
+    e.preventDefault();
+    self.view.appendTask();
+    self.view.makeDraggable();
+    self.view.makeDroppable();
+    })
+  };
+}
 
 var View = function(controller){
   this.controller = controller;
 
   this.makeDraggable= function() {
-    $('table tr').draggable({
+    $('table td').draggable({
       containment: '.container',
       helper: 'clone',
       snap: true,
@@ -22,7 +39,7 @@ var View = function(controller){
       snapTolerance: 32,
       revert: 'invalid'
     });
-  }
+  };
 
   this.makeDroppable = function(){
     $('.col-md-4').droppable({
@@ -32,12 +49,26 @@ var View = function(controller){
             dropChildren= drop.children(),
             dragChildren= drag.children();
         if(drop.attr('id')=="done") {
-          drag.appendTo(drop.children()).delay(1000).fadeOut(5000)
+          drag.appendTo(drop.children()).delay(1000).fadeOut(500)
         } else {
           drag.appendTo(drop.children())
-        }
+        };
       }
     });
-  }
+  };
 
-}
+  this.appendTask = function(){
+    var str=$( "#add-input" ).serialize();
+        str=str.replace(/\+/g, ' ')
+        task=str.split('=')[1];
+        debugger
+    $('#todo table tr:last').after('<tr class="ui-draggable ui-draggable-handle"><td>'+
+      task+'</td></tr>');
+    $( "#add-input" ).val('');
+    $( "#add-input input")[0].value = ''
+  }
+};
+
+
+
+
