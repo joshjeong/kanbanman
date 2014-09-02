@@ -1,19 +1,35 @@
 @import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url(http://fonts.googleapis.com/css?family=Coming+Soon);
 
 .container{
   margin-top: 1rem;
   border: 3rem solid #CCCCCC;
   border-radius: 20px;
   height: 90%;
+  -webkit-box-shadow: 2px 1px 9px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    2px 1px 9px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         2px 1px 9px 0px rgba(50, 50, 50, 0.75);
 }
 
+#add-input{
+  margin: 1rem;
+  text-align: center;
+}
 
-tr:hover{
+td{
+  font-family: 'Coming Soon', cursive;
+}
+
+td:hover{
   cursor: pointer
 }
 
 th{
-  font-family: 'Permanent Marker', cursive;
+  text-decoration: underline;
+  padding-top: 1rem;
+  padding-bottom: 3rem; 
+  font-family: 'Coming Soon', cursive;
+  font-size: 2rem;
   color: red;
   text-align: center
 }
@@ -41,14 +57,10 @@ table{
   border-right: 1px dotted black;
 }
 
-#done{
+#done td{
+  text-decoration: line-through;
 }
 
 div{
   height: 5rem;
-}
-
-tr{
-  width: 5rem;
-  height: 3rem;
 }
