@@ -1,0 +1,23 @@
+#add-input
+  = form_for [@user, @task] do |f|
+    = f.text_field :action, placeholder: "What would you like to accmplish today?", size: 40
+    = f.select :priority, ["High", "Medium", "Low"]
+    = f.submit "Add"
+
+.container
+  .row
+    .col-md-4#todo
+      %table
+        %tr
+          %th
+            Todo
+    .col-md-4#wip
+      %table
+        %tr
+          %th
+            In Progress
+    .col-md-4#done
+      %table
+        %tr
+          %th
+            Done
