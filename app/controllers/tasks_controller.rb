@@ -8,7 +8,6 @@ class TasksController < ApplicationController
   end
 
   def create
-    p 'create route'
     @user = User.find(params[:user_id])
     @task = @user.tasks.create(task_params)
   end

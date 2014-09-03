@@ -10,9 +10,4 @@ class UsersController < ApplicationController
     @task = Task.new
   end
 
-  def new
-    @user = User.find(params[:id])
-    @tasks = @user.tasks
-  end
-
 end
