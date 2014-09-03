@@ -10,5 +10,47 @@
 
 <%= yield %>
 
+<form id="add-input">
+    <input type= "text field" name="todo" size="40" placeholder="What would you like to accomplish?">
+    <input type="submit" value="Add">
+
+  </form>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" id="todo">
+        <table>
+          <tr>
+            <th>
+              Todo
+            </th>
+          </tr>
+        </table>
+      </div>
+
+      <div class="col-md-4" id="wip">
+        <table>
+          <tr>
+            <th>
+              In Progress
+            </th>
+          </tr>
+        </table>
+      </div>
+
+      <div class="col-md-4" id="done">
+        <table>
+          <tr>
+            <th>
+              Done
+            </th>
+          </tr>
+        </table>
+      </div>
+
+
+  </div>
+  <script type="text/javascript" src="public/kanban.js"></script>
+
 </body>
 </html>
