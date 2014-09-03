@@ -1,9 +1,18 @@
-class UsersController < ActionController::Base
+class UsersController < ApplicationController
   
   def index
+    @users = User.all
   end
 
   def show
+    @user = User.find(params[:id])
+    @tasks = @user.tasks
+    @task = Task.new
+  end
+
+  def new
+    @user = User.find(params[:id])
+    @tasks = @user.tasks
   end
 
 end
