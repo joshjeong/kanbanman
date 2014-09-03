@@ -58,10 +58,7 @@ var View = function(controller){
   };
 
   this.appendTask = function(){
-    var str=$( "#add-input" ).serialize();
-        str=str.replace(/\+/g, ' ')
-        task=str.split('=')[1];
-        debugger
+    var task= $('#task_action').val();
     $('#todo table tr:last').after('<tr class="ui-draggable ui-draggable-handle"><td>'+
       task+'</td></tr>');
     $( "#add-input" ).val('');
